@@ -14,6 +14,7 @@ For example:
 '''
 class Solution:
     # @return a string
+    #将数字换成26进制的数，但要注意换算过的数字没有0（从1开始），所以需先将num-1，否则z换算成的为10
     def convertToTitle(self, num):
         num_list = []
         while num>0:

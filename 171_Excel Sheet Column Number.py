@@ -14,6 +14,7 @@ For example:
 class Solution:
     # @param s, a string
     # @return an integer
+    #先将字符串翻转，从个位开始计和，每次循环都相当于加上26的某次方。
     def titleToNumber(self, s):
         new_s = s[::-1]
         cnt = 0
